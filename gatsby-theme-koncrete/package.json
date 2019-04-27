@@ -1,6 +1,6 @@
 {
   "name": "gatsby-theme-koncrete",
-  "version": "0.0.0",
+  "version": "0.0.3",
   "main": "gatsby-config.js",
   "author": {
     "name": "Henrique Cavalieri",
