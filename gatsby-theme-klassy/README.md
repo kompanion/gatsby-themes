@@ -1,15 +1,13 @@
-# gatsby-theme-koncrete
+# gatsby-theme-klassy
 
-koncrete is the basis for Gatsby projects, adding **Typescript integration** (which you opt not to use) and **`react-helmet`** (as well as `gatsby-plugin-react-helmet`) by default. Optionally, you can also add `gatsby-plugin-sitemap`, `gatsby-transformer-sharp` and `gatsby-plugin-netlify` via theme options.
-
-This theme doesn't add any component or functionality, it's purely for packing dependencies. If you're looking for higher-level themes, browse [kompanion's theme repository](https://github.com/kompanion/gatsby-themes).
+klassy adds the basis for styling your Gatsby projects with [PostCSS](https://postcss.org).
 
 ## Usage
 
 ```shell
-npm i gatsby-theme-koncrete
+npm i gatsby-theme-klassy
 # or
-yarn add gatsby-theme-koncrete
+yarn add gatsby-theme-klassy
 ```
 
 All the available options are listed in the example below:
@@ -19,24 +17,18 @@ All the available options are listed in the example below:
 module.exports = {
   __experimentalThemes: [
     {
-      resolve: 'gatsby-theme-koncrete',
-      options: {
-        // You can edit postcss-preset-env options
-        presetEnvOptions: { stage: 0 }, // optional
-
-        // and add your own postcss plugins. If adding stylelint, for
-        // example, you'll have to add a .stylelintrc config file
-        postcssPlugins: [ require('stylelint') ] // optional
-      }
+      resolve: 'gatsby-theme-klassy',
+      // options: {
+      //   useSharp: false, // defaults to false
+      //   useNetlify: true, // defaults to false
+      //   useSitemap: true, // defaults to false
+      //   siteUrl: 'https://gatsbyjs.org', // necessary for `useSitemap`
+      // }
     }
   ]
   // ...
 }
 ```
-
-## To document
-
--
 
 ## Note on dependencies
 
@@ -69,6 +61,7 @@ Also, having the package doesn't mean you have to use it: if you don't turn them
 
 ## TODO
 
-- Check if prettier / standardJS is feasible inside a theme
+- set-up prettier and eslint (or standardJS)
+- **documentation**
 - Investigate if there's a way to set-up `prettier` and `tslint`/`eslint` to run on sites
   - This might be better off with starters as configuration is highly personal and might incurr in headaches for users

@@ -10,7 +10,7 @@ module.exports = ({
   ]
   // If we don't have a siteUrl, then we can't produce a sitemap!
   if (useSitemap === true && typeof siteUrl === 'string') {
-    pluginsList = [...pluginsList, 'gatsby-plugin-sitemap']
+    pluginsList = [...pluginsList, 'gatsby-plugin-advanced-sitemap']
   }
   if (useSharp === true) {
     pluginsList = [
